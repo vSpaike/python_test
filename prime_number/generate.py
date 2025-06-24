@@ -4,6 +4,7 @@ def isPrime(n):
     """
     #Do execption for number 5 and 2 and remove number that we know will not be prime 
     if(n%10!=5 or n==5) and (n%2!=0 or n==2):
+        #Compare up to the root of the parameter because above it's useless 
         for i in range(2,int(n**0.5)+1):
             if n%i==0:
                 return False

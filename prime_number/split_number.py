@@ -1,27 +1,14 @@
-"""def split_conseq(l):
-    if(len(l)==0):
-        return []
-    final=[]
-    nbc=l[0]
-    current=[]
-    for i in l[1:]:
-        current.append(nbc)
-        if i != (nbc+1):
-            final.append(current)
-            current=[]
-        nbc=i
-    if len(current)>0:
-        final.append(current)
-    final.append([nbc])
-    return final 
-"""
-#----------------------------
 def split_conseq(l):
+    """
+    Split an integer list in array of array of subsequent numbers  
+    """
     if(len(l)==0):
         return []
     final=[]
     nbc=l[0]
     current=[]
+
+    #Compare if there are subsequent numbers
     for i in range(1,len(l)):
         current.append(nbc)
         if(l[i] != nbc+1):
@@ -29,7 +16,7 @@ def split_conseq(l):
             current=[]
         nbc=l[i]
 
-    #processes the last number
+    #Processes the last number of the array
     if(len(current)>0):
         if current[-1]+1 == nbc:
             current.append(nbc)
@@ -39,6 +26,8 @@ def split_conseq(l):
     return final 
 
 if __name__ == "__main__":
+
+    #Lets the user type their own array
     list_number=[]
     number=""
     while number !="stop":

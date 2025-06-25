@@ -1,5 +1,5 @@
 import unittest
-from prime_number import isPrime, generatePrimeNumber
+from number_operation import isPrime, generatePrimeNumber
 
 class TestIsPrime(unittest.TestCase):
 

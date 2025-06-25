@@ -1,5 +1,5 @@
 import unittest 
-from prime_number import split_conseq
+from number_operation import split_conseq
 
 class TestSplitNumber(unittest.TestCase):
 

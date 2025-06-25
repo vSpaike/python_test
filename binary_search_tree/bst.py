@@ -29,7 +29,6 @@ class BinarySearchTree:
         return final
         
 
-
     def valid(self):
         for i in range(self.size//2):
             if((self.bst[2*i + 1] != None) and (self.bst[i] < self.bst[2*i + 1])) or ((self.bst[2*i + 2] != None) and (self.bst[i] > self.bst[2*i + 2])):

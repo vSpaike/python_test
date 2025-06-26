@@ -115,4 +115,4 @@ class BinarySearchTree:
         self.bst=array
 
 if __name__ == "__main__":
-    print(BinarySearchTree([1,2,3,4,5,6,7]).smallest())
+    print("Hello, World")

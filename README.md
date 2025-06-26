@@ -18,7 +18,7 @@ The complexity is O(1) because we only do a comparison and a few mathematical op
 For the method smallest i think there is a possibility to have a complexity of O(1) like the method biggest but i don't know how to write it. I spent too much time trying things so I decided to write it in another way with more complexity. The complexity if O(log2(n)) with n is the size of the list because we cross each layer once.
 
 ## Number operations
-The main objective there was to optimize the program as much as i can by removing the cases where we know a number couldn't be prime like when it ended with a 2 or a 5.
+The main objective there was to optimize the program as much as i can by removing the cases where we know a number couldn't be prime like when it ended with a 2 or a 5.\
 For the second question, I didn't know how I could optimize it because of the complexity. We need to go through every number on the list, and the program already has a complexity of O(n). Maybe there is a posibilty of checking the 2 numbers at the same time which could avoid going to the next in front if he's consequent.
 
 ## Tests

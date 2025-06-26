@@ -70,7 +70,7 @@ class BinarySearchTree:
             size-=1
         current = self.bst[0]
         for i in range(size):
-            if self.bst[2*i+1] != None:
+            if self.bst[2*i+1] != None and self.bst[2*i+1] < current:
                 current = self.bst[2*i+1]  
         return current
 
@@ -115,4 +115,4 @@ class BinarySearchTree:
         self.bst=array
 
 if __name__ == "__main__":
-    print("Hello, World")
+    print(BinarySearchTree([1,2,3,4,5,6,7]).smallest())

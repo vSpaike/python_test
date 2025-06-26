@@ -15,4 +15,24 @@ print("\nThe first",number_to_stop,"numbers:",prime_number,"\n")
 number_to_split=[1,2,3,6,9,42,89,90,99]
 split_number= split_conseq(number_to_split)
 
-print("Those number consequent are:",split_number)
+print("These consequent numbers are:",split_number,"\n")
+
+
+#----------------------------------------------------------------
+# Demonstration second part
+#----------------------------------------------------------------
+
+simple_array=[1,2,3,4,5,6,7]
+
+bst=BinarySearchTree(simple_array)
+new_array=bst.to_bst()
+
+print("The array in binary search tree form:", new_array)
+bst.setArray(new_array)
+
+print("The biggest and smallest element are:",bst.biggest(),",",bst.smallest())
+
+
+
+
+

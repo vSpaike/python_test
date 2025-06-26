@@ -40,3 +40,12 @@ class TestBinarySearchTree(unittest.TestCase):
 
     def test_to_bst(self):
         self.assertEqual(BinarySearchTree([2,3,4,6,7,8,9]).to_bst(), [6, 3, 8, 2, 4, 7, 9])
+
+    def test_to_bst_empty(self):
+        self.assertEqual(BinarySearchTree([]).to_bst(), [])
+    
+    def test_sorted_array(self):
+        self.assertEqual(BinarySearchTree([6, 3, 8, 2, 4, 7, 9]).sorted_array(), [2,3,4,6,7,8,9])
+
+    def test_sorted_array_empty(self):
+        self.assertEqual(BinarySearchTree([]).sorted_array(), [])
